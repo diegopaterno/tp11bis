@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/estilos.css" />
+    <!-- <link rel="stylesheet" href="css/retro.css" />
+    <link rel="stylesheet" href="css/urbano.css" /> -->
+   
+    <title>Ejercicio 11</title>
+  </head>
+  <body>
+    <Label class="cambioEstilos">Estilos</Label>
+    <div class="cambioEstilos">
+      <input type="radio" name="estilo" id="normal" checked>
+      <label for="normal">Modo normal</label></input>
+      <input type="radio" name="estilo" id="retro">
+      <label for="retro">Modo Retro</label>
+    </input>
+      <input type="radio" name="estilo" id="urbano">
+      <label for="urbano">Modo Urbano</label>
+    </input>
+
+    </div>
+    <!--     aquí comienza el header -->
+    <div class="header">
+      <div class="header__barraSuperior"></div>
+      <div class="header__titulo">Vení al Gym</div>
+      <div class="header__barraInferior"></div>
+    </div>
+    <!-- aquí termina el header -->
+    <form>
+      <!-- aquí comienza la parte 1 del formulario -->
+      <div class="formulario">
+        <fieldset class="formulario__datos">
+          <legend class="formulario__datos-legend">
+            <span class="icons__legend">🙋🏻‍♂️</span> <span>D</span>atos
+            <span>P</span>ersonales
+            <span>👀</span>
+          </legend>
+          <div class="campoTexto">
+            <label class="titulo_label">Nombre:*</label>
+            <input class="campo" type="text" id="name" required />
+          </div>
+
+          <div class="campoTexto">
+            <label class="titulo_label">Apellido:*</label>
+            <input class="campo" type="text" id="apellido" required />
+          </div>
+
+          <div class="campoTexto">
+            <label class="titulo_label">Documento:*</label>
+            <input
+              class="campo_numeros"
+              type="number"
+              id="documento"
+              required
+            />
+          </div>
+
+          <div class="campoTexto nacionalidad">
+            <label for="pais">Nacionalidad</label>
+            <select class="campo campo__nacionalidad" name="pais" id="pais">
+              <option class="seleccionar_izquierda" value="">
+                - Seleccionar -
+              </option>
+              <option value="Argentina">Argentina</option>
+              <option value="Brazil">Brasil</option>
+              <option value="Uru">Uruguay</option>
+              <option value="otro">Otra</option>
+            </select>
+          </div>
+
+          <div class="campoTexto">
+            <label class="titulo_label">Contanos un poco de vos</label>
+            <textarea class="campo_mensaje" name="escribir" rows="7"></textarea>
+          </div>
+          <div>
+            <div class="campoSexo">
+              <p class="titulo-chico">Sexo:</p>
+
+              <label for="mujer">
+                <input
+                  type="radio"
+                  name="sexo"
+                  id="mujer"
+                  value="mujer"
+                  checked
+                  required
+                />
+                Femenino
+              </label>
+
+              <label for="hombre">
+                <input
+                  type="radio"
+                  name="sexo"
+                  id="hombre"
+                  value="hombre"
+                  checked
+                  required
+                />
+                Masculino
+              </label>
+
+              <label for="otroSexo"
+                ><input
+                  type="radio"
+                  name="sexo"
+                  id="otroSexo"
+                  value="otroSexo"
+                  checked
+                  required
+                />
+                Otro
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <div>
+          <!-- aquí termina la primera parte del formulario -->
+          <div class="separador"></div>
+          <!--         aquí comienza la segunda parte del formulario -->
+        </div>
+        <fieldset class="formulario__contacto">
+          <legend class="formulario__datos-legend">
+            <span class="icons__legend">📱</span> <span>D</span>atos de
+            <span>C</span>ontacto
+            <span>📩</span>
+          </legend>
+          <div class="campoTexto">
+            <label class="titulo_label">Teléfono:*</label>
+            <input
+              class="campo_numeros campo_telefono"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Código de área y número"
+              required
+            />
+          </div>
+          <div class="campoTexto">
+            <label class="titulo_label"
+              >Dirección de correo electrónico:*</label
+            >
+            <input
+              class="campo_numeros"
+              type="email"
+              id="mail"
+              placeholder="Ej: mail@gmail.com"
+              required
+            />
+          </div>
+        </fieldset>
+        <div>
+          <!-- aquí termina la segunda parte del formulario -->
+          <div class="separador"></div>
+          <!-- aquí comienza la tercera parte del formulario -->
+        </div>
+        <fieldset class="formulario__actividades">
+          <legend class="formulario__datos-legend">
+            <span class="icons__legend">🚴</span> <span>A</span>ctividades
+            <span>🤸🏻‍♂️</span>
+          </legend>
+          <p class="porFavor">
+            Por favor, indicá cuáles actividades te interesan.
+          </p>
+
+          <div>
+            <p class="pSedes">Sede Palermo:</p>
+            <div class="sedes">
+              <label class="cuadroSedes" for="basquet">
+                <input
+                  type="checkbox"
+                  name="actividadPal"
+                  id="basquet"
+                  value="basquet"
+                />
+                Basquet
+              </label>
+              <label class="cuadroSedes" for="boxeo">
+                <input
+                  type="checkbox"
+                  name="actividadPal"
+                  id="boxeo"
+                  value="boxeo"
+                />
+                Boxeo
+              </label>
+              <label class="cuadroSedes" for="futbol">
+                <input
+                  type="checkbox"
+                  name="actividadPal"
+                  id="futbol"
+                  value="futbol"
+                />
+                Fútbol
+              </label>
+              <label class="cuadroSedes" for="tenis">
+                <input
+                  type="checkbox"
+                  name="actividadPal"
+                  id="tenis"
+                  value="tenis"
+                />
+                Tenis
+              </label>
+            </div>
+          </div>
+          <div>
+            <p class="pSedes">Sede Rosario:</p>
+            <div class="sedes">
+              <label class="cuadroSedes" for="basket">
+                <input
+                  type="checkbox"
+                  name="actividadRos"
+                  id="basket"
+                  value="basquet"
+                />
+                Basquet
+              </label>
+              <label class="cuadroSedes" for="fobal">
+                <input
+                  type="checkbox"
+                  name="actividadRos"
+                  id="fobal"
+                  value="futbol"
+                />
+                Fútbol
+              </label>
+              <label class="cuadroSedes" for="rugby">
+                <input
+                  type="checkbox"
+                  name="actividadros"
+                  id="rugby"
+                  value="rugby"
+                />
+                Rugby
+              </label>
+              <label class="cuadroSedes" for="voley">
+                <input
+                  type="checkbox"
+                  name="actividadPal"
+                  id="voley"
+                  value="voley"
+                />
+                Voley
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <!-- aquí termina la tercera parte del formulario -->
+        <div>
+          <div class="condiciones">
+            <div>
+              <label class="condicion__separacion">
+                <input
+                  type="checkbox"
+                  name="acepto"
+                  id="acepto"
+                  value="acepto"
+                />
+              </label>
+              Acepto las condiciones*
+            </div>
+            <div>
+              <label class="condicion__separacion">
+                <input
+                  type="checkbox"
+                  name="novedades"
+                  id="novedades"
+                  value="novedades" 
+                  checked
+                />
+              </label>
+              Deseo recibir novedades
+            </div>
+            <p class="obligatorio">*:campo obligatorio.</p>
+          </div>
+        </div>
+        <div class="botones">
+          <button class="btn" type="submit">Iniciar afiliación</button>
+          <button class="btn" type="reset">Restablecer</button>
+        </div>
+      </div>
+    </form>
+    <script src="js/main.js"></script>
+  </body>
+</html>

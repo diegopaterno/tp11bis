@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(../img/texturaFondo.jpg);
+    font-family: "Permanent Marker", cursive;
+  }
+  
+  .header__titulo {
+    font-size: 95px;
+    text-shadow: rgba(0, 0, 0, 0.412) 10px 10px 15px;
+  
+    text-align: center;
+    color: white;
+    padding-top: 25px;
+    font-family: "Permanent Marker", cursive;
+  }
+  
+  .formulario {
+    width: 80%;
+    margin: 0px auto;
+  
+    box-shadow: rgba(0, 0, 0, 0.412) 15px 15px 15px;
+    padding: 50px;
+  
+    border-radius: 15px;
+  }
+  
+  .formulario__datos,
+  .formulario__contacto,
+  .formulario__actividades {
+    background-image: url(../img/texturaFormulario.jpg);
+    box-shadow: rgba(0, 0, 0, 0.412) 15px 15px 15px;
+    border-radius: 25px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+  }
+  .formulario__datos:focus-within,
+.formulario__contacto:focus-within,
+.formulario__actividades:focus-within {
+  background-color: var(--verdeFocus);
+}
+
+fieldset {
+  border: none;
+}
+
+.icons__legend:first-child {
+  display: none;
+}
+
+.formulario__datos-legend {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.412) 4px 4px 3px;
+}
+
+.titulo_label,
+.nacionalidad {
+  font-size: 25px;
+}
+
+.separador {
+  width: 25%;
+  height: 0;
+  margin: 40px auto;
+  border-top: 15px dotted var(--verdeClaro) !important;
+}
+
+.campo,
+.campo_numeros {
+  width: 70%;
+  height: 40px;
+  border-radius: 4px;
+  color: black;
+  font-weight: bold;
+  margin: 15px;
+  font-size: 16px;
+}
+
+.campoTexto {
+  display: flex;
+  flex: column;
+  justify-content: center;
+}
+
+.campo_mensaje {
+  display: flex;
+  flex: row;
+  width: 70%;
+  margin-bottom: 15px;
+  text-align: right;
+  font-size: 17px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.campo:focus,
+.campo_numeros:focus,
+.campo_mensaje:focus {
+  background-image: url(../img/texturaFondo.jpg);
+  color: white;
+}
+
+.formulario__datos:focus-within,
+.formulario__contacto:focus-within,
+.formulario__actividades:focus-within {
+  background-image: url(../img/back_formulario.jpg);
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.412) 4px 4px 3px;
+}
+
+.campoSexo {
+  text-align: center;
+  font-size: 25px;
+}
+
+.sedes {
+  text-align: center;
+}
+.pSedes {
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.cuadroSedes {
+  font-size: 25px;
+}
+
+.porFavor {
+  font-size: 20px;
+  text-align: center;
+}
+
+.condiciones {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  margin-top: 25px;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.412) 4px 4px 3px;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background-color: white;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.412) 15px 15px 15px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  position: relative;
+  left: 5px;
+  top: 5px;
+}
+
+.condicion__separacion,
+.obligatorio {
+  margin-left: 25px;
+}

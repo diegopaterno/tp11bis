@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto+Mono:ital@1&display=swap');
+:root{
+    --marcos:#81feff;
+    --titulo:rgb(152, 247, 9);
+    --campos:#da4db9;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body { 
+    background-image: url(../img/retroImage.jpg);
+    background-size:cover;  
+  }
+  /* elimina las flechas del input number */
+ input[type="number"]::-webkit-inner-spin-button,
+ input[type="number"]::-webkit-outer-spin-button {
+   -webkit-appearance: none;
+   margin: 0; 
+ }
+ .header__titulo{
+    
+    position: absolute;
+    top: 10%;
+    color: var(--titulo);
+    font-size: 80px;
+    font-weight:bold;  
+    animation-name: animacion;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+@keyframes animacion {
+    0%{
+        color: rgb(255, 213, 0);
+        transform: rotate(0);
+    }
+    10%{
+        color: rgb(47, 255, 0);
+    }
+    70%{
+        color: green;
+    }
+    100%{
+        color: rgb(234, 0, 255);
+        transform: rotate(360deg) scale(1.3);
+    }
+}
+
+.cambioEstilos{
+    color: var(--titulo);
+}
+.formulario{
+    color: var(--titulo);
+}
+.formulario__datos{
+    margin-top: 10px;
+    padding: 1%;
+    border-color: var(--marcos);
+    border-radius: 15px;
+    margin-left: 60%;
+}
+option{
+    background-color: var(--campos);
+}
+select option {
+    color: var(--titulo);
+    background-color: var(--campos);
+    }
+.formulario__contacto{
+    width: 95%;
+    padding: 1%;
+    border-color: var(--marcos);
+    border-radius: 15px;
+}
+input::placeholder {
+    color: var(--titulo);
+}
+.formulario__actividades{
+     width: 60%; 
+     padding: 1%;
+    border-color: var(--marcos);
+    border-radius: 15px;
+}
+.condiciones{
+    padding: 30px;
+    text-align: end;
+}
+input[type*='checkbox'] {
+    accent-color: var(--campos);    
+}
+input[type*='radio'] {
+    accent-color: var(--campos);
+} 
+[type*='text'], [type*='number'], [type*='email'], [type*='tel'] {
+    border-radius: 5px;
+    background-color: var(--campos);
+}
+.campo_mensaje{
+    border-radius: 5px;
+    background-color: var(--campos);   
+}
+.seleccionar_izquierda{
+    background-color: var(--campos);
+}
+.botones{  
+    width: 22%;
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid var(--marcos);
+    border-radius: 10px;
+}
+.btn{
+    margin: 2px;
+    padding: 14px; 
+    background-color: var(--campos);
+    border: var(--marcos);
+    border-radius: 10px;
+}
+.btn:hover{
+    transform: rotate(15deg);
+    color: var(--marcos);
+    font-weight: bold;
+    cursor: pointer;  
+}
+[type*="reset"]{
+    margin-left: 5%;
+}
